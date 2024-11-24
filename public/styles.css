@@ -1,0 +1,135 @@
+/* Font Definitions */
+@font-face {
+    font-family: 'Montserrat';
+    src: url('./fonts/Montserrat/Montserrat-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('./fonts/Montserrat/Montserrat-Medium.otf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Avenir';
+    src: url('./fonts/Avenir/Avenir-Book.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Global Styles */
+body {
+    font-family: 'Avenir', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    text-align: center;
+}
+
+/* Title */
+h1 {
+    font-family: 'Avenir', sans-serif;
+    font-size: 45px;
+    font-weight: normal;
+    color: #333;
+    margin: 20px 0;
+}
+
+/* Product Container */
+#product-container {
+    display: flex;
+    flex-wrap: nowrap; /* Allow carousel-like sliding */
+    justify-content: center;
+    padding: 20px 0;
+}
+
+/* Product Card */
+.product-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 250px;
+    padding: 16px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin: 10px;
+}
+
+.product-card img {
+    max-width: 100%;
+    max-height: 150px;
+    object-fit: contain;
+    border-radius: 4px;
+}
+
+/* Product Title */
+.product-card h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    color: #333;
+    margin: 10px 0;
+}
+
+/* Price */
+.product-card .price {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    font-weight: normal;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+/* Current Color */
+.product-card .gold-type {
+    font-family: 'Avenir', sans-serif;
+    font-size: 12px;
+    color: #777;
+    margin-bottom: 10px;
+}
+
+/* Rate */
+.product-card .popularity {
+    font-family: 'Avenir', sans-serif;
+    font-size: 14px;
+    color: #555;
+    margin-top: 10px;
+}
+
+/* Color Picker */
+.color-picker {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.color-picker button {
+    border: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.color-picker button:hover {
+    outline: 2px solid #333;
+}
+
+/* Swiper Navigation */
+.swiper-button-next,
+.swiper-button-prev {
+    color: #333;
+    width: 40px;
+    height: 40px;
+}
+
+.swiper-pagination {
+    bottom: 10px;
+}
